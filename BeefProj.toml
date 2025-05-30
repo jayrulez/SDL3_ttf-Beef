@@ -1,6 +1,7 @@
 FileVersion = 1
-Dependencies = {corlib = "*", SDL3Native = "*"}
+Dependencies = {corlib = "*", SDL3 = "*", corlib = "*"}
 
 [Project]
 Name = "SDL3_ttf"
+TargetType = "BeefLib"
 StartupObject = "SDL3_ttf.Program"
