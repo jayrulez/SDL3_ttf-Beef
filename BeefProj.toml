@@ -1,0 +1,6 @@
+FileVersion = 1
+Dependencies = {corlib = "*", SDL3Native = "*"}
+
+[Project]
+Name = "SDL3_ttf"
+StartupObject = "SDL3_ttf.Program"
