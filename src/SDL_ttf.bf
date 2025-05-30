@@ -7,7 +7,7 @@ static
 {
 	public const uint32 SDL_TTF_MAJOR_VERSION = 3;
 	public const uint32 SDL_TTF_MINOR_VERSION = 2;
-	public const uint32 SDL_TTF_MICRO_VERSION = 4;
+	public const uint32 SDL_TTF_MICRO_VERSION = 2;
 
 	public const uint32 SDL_TTF_VERSION = SDL_VERSIONNUM(SDL_TTF_MAJOR_VERSION, SDL_TTF_MINOR_VERSION, SDL_TTF_MICRO_VERSION);
 
