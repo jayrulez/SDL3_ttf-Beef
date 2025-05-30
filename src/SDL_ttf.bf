@@ -27,7 +27,7 @@ static
 	 *
 	 * \since This function is available since SDL_ttf 3.0.0.
 	 */
-	[CLink] public static extern int32 TTF_Version(void);
+	[CLink] public static extern int32 TTF_Version();
 
 	/**
 	 * Query the version of the FreeType library in use.
@@ -84,7 +84,7 @@ static
 	 *
 	 * \sa TTF_Quit
 	 */
-	[CLink] public static extern bool TTF_Init(void);
+	[CLink] public static extern bool TTF_Init();
 
 	/**
 	 * Create a font from a file, using a specified point size.
@@ -1700,7 +1700,7 @@ static
 	 * \sa TTF_DestroySurfaceTextEngine
 	 * \sa TTF_DrawSurfaceText
 	 */
-	[CLink] public static extern TTF_TextEngine* TTF_CreateSurfaceTextEngine(void);
+	[CLink] public static extern TTF_TextEngine* TTF_CreateSurfaceTextEngine();
 
 	/**
 	 * Draw text to an SDL surface.
@@ -2753,7 +2753,7 @@ static
 	 *
 	 * \since This function is available since SDL_ttf 3.0.0.
 	 */
-	[CLink] public static extern void TTF_Quit(void);
+	[CLink] public static extern void TTF_Quit();
 
 	/**
 	 * Check if SDL_ttf is initialized.
@@ -2777,5 +2777,5 @@ static
 	 * \sa TTF_Init
 	 * \sa TTF_Quit
 	 */
-	[CLink] public static extern int32 TTF_WasInit(void);
+	[CLink] public static extern int32 TTF_WasInit();
 }
