@@ -5,3 +5,19 @@ Dependencies = {corlib = "*", SDL3 = "*", corlib = "*"}
 Name = "SDL3_ttf"
 TargetType = "BeefLib"
 StartupObject = "SDL3_ttf.Program"
+
+[Configs.Debug.Win32]
+LibPaths = ["$(ProjectDir)/dist/SDL3_ttf-3.2.2/lib/x86/SDL3_ttf.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_ttf-3.2.2/lib/x86/*.dll\")", "CopyToDependents(\"$(ProjectDir)/dist/SDL3_ttf-3.2.2/lib/x86/*.pdb\")"]
+
+[Configs.Debug.Win64]
+LibPaths = ["$(ProjectDir)/dist/SDL3_ttf-3.2.2/lib/x64/SDL3_ttf.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_ttf-3.2.2/lib/x64/*.dll\")", "CopyToDependents(\"$(ProjectDir)/dist/SDL3_ttf-3.2.2/lib/x64/*.pdb\")"]
+
+[Configs.Release.Win32]
+LibPaths = ["$(ProjectDir)/dist/SDL3_ttf-3.2.2/lib/x86/SDL3_ttf.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_ttf-3.2.2/lib/x86/*.dll\")"]
+
+[Configs.Release.Win64]
+LibPaths = ["$(ProjectDir)/dist/SDL3_ttf-3.2.2/lib/x64/SDL3_ttf.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_ttf-3.2.2/lib/x64/*.dll\")"]
